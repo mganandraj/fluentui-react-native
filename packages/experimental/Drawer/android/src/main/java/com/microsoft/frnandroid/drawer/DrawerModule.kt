@@ -1,10 +1,10 @@
 package com.microsoft.frnandroid.drawer
 
-import com.facebook.react.bridge.Callback
+// import com.facebook.react.bridge.Callback
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
-import com.microsoft.fluentui:FluentUIAndroid
+// import com.microsoft.fluentui.drawer;
 
 /*This class will communicate with react-native*/
 class DrawerModule(context: ReactApplicationContext) : ReactContextBaseJavaModule(context) {
@@ -15,8 +15,7 @@ class DrawerModule(context: ReactApplicationContext) : ReactContextBaseJavaModul
 
     override fun getConstants(): Map<String, Any>? {
         val constants = HashMap<String, Any>()
-        constants.put('message', 'Hello from native code')
+        constants.put("message", "Hello from native code")
         return constants
     }
-
 }
